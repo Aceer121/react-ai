@@ -1,13 +1,13 @@
 // App.js
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter as Routes, Route, Link } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
 import SignIn from './components/SignIn';
 
 function App() {
   return (
-    <Router>
+    <Routes>
       <div className="App" style={{ backgroundColor: 'black', height: '100vh', display: 'flex', 
             flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
         <h1 style={{ color: 'white' }}>React AI</h1>
@@ -18,13 +18,13 @@ function App() {
             <li><Link to="/signin">Sign In</Link></li>
           </ul>
         </nav>
-        <Switch>
+        
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/signin" component={SignIn} />
-        </Switch>
+
       </div>
-    </Router>
+    </Routes>
   );
 }
 
