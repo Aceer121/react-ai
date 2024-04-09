@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import './App.css';
 
 import Home from './components/Home';
 import About from './components/About';
@@ -16,9 +17,9 @@ function App() {
   return (
     <Router>
       <div className="App" style={{ backgroundColor: 'black', height: '100vh', position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-        <h1 style={{ color: 'white' }}>React AI</h1>
+        <h1 style={{ color: 'white' }}>Arcel's React AI</h1>
         <div style={{ textAlign: 'center' }}>
-          <input type="text" placeholder="Search..." style={{ width: '300px', padding: '10px', borderRadius: '5px', border: '2px solid #ccc', backgroundColor: 'white' }} />
+          <input type="text" placeholder="Search React Ai..." style={{ width: '300px', padding: '10px', borderRadius: '5px', border: '2px solid #ccc', backgroundColor: 'white' }} />
         </div>
         <div style={{ position: 'absolute', top: 0, right: 0 }}>
           <nav>

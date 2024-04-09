@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* App.css */
+
+.App a:hover {
+  opacity: 0.7; /* Adjust the opacity as desired */
+  cursor: pointer;
+}
