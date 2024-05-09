@@ -1,14 +1,17 @@
-// App.js
-
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Home from './components/Home';
 import About from './components/About';
+import Home from './components/Home';
 import SignIn from './components/SignIn';
+import Navigation from './components/Navigation';
+import './App.scss';
 
-function App() {
+// Fixed the syntax here
+const App = () => {
   return (
-    <div className="app">
+    <div className='app'>
+    <div className='home'>
+      {/* Removed the extra <div> with className 'Home' */}
       <React.StrictMode> {/* Place StrictMode around the root component */}
         <BrowserRouter>
           <Routes>
@@ -19,6 +22,7 @@ function App() {
         </BrowserRouter>
       </React.StrictMode>
     </div>
+   </div>
   );
 }
 
