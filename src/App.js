@@ -1,29 +1,23 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import About from './components/About';
-import Home from './components/Home';
-import SignIn from './components/SignIn';
-import Navigation from './components/Navigation';
+import { Routes, Route } from 'react-router-dom';
+import Home from './components/Home/Home';
+import About from './components/About/About';
+import SignIn from './components/SignIn/SignIn';
+import Navigation from './routes/navigation/navigation.component';
 import './App.scss';
 
-// Fixed the syntax here
 const App = () => {
   return (
     <div className='app'>
-    <div className='home'>
-      {/* Removed the extra <div> with className 'Home' */}
-      <React.StrictMode> {/* Place StrictMode around the root component */}
-        <BrowserRouter>
-          <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/signin" element={<SignIn />} />
-          </Routes>
-        </BrowserRouter>
-      </React.StrictMode>
+      <Routes>
+        <Route path='/' element={<Navigation />}>
+          <Route index element={<Home />} />
+          <Route path='about' element={<About />} />
+          <Route path='signin' element={<SignIn />} />
+        </Route>
+      </Routes>
     </div>
-   </div>
   );
-}
+};
 
 export default App;

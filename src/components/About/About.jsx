@@ -1,13 +1,12 @@
-import { Component } from 'react';
 import React from 'react';
 
-function About() {
+const About = () => {
   return (
     <div>
       <h2>About</h2>
       <p>About this app...</p>
     </div>
   );
-}
+};
 
 export default About;

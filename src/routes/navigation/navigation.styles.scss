@@ -1,0 +1,41 @@
+/* index.scss */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    background-color: #f8f8f8;
+  }
+  
+  .logo-container {
+    cursor: pointer;
+  }
+  
+  .nav-links-container {
+    display: flex;
+  }
+  
+  .nav-link {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+
+  a {
+  text-decoration: none;
+  color: black;
+}
