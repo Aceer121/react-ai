@@ -1,13 +1,14 @@
 import React from 'react';
 import './home.styles.scss';
 
-
 const Home = () => {
   return (
-    <div>
-    <div className="background"></div>
-      <h2>Home</h2>
-      <p>Welcome to the Home page!</p>
+    <div className="background">
+      <div className="header">
+        <h2>React Ai</h2>
+        <input className="search-box" type="search" placeholder="message ai" />
+      </div>
+      <p>Welcome to the React Ai!</p>
     </div>
   );
 };

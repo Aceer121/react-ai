@@ -1,11 +1,9 @@
 import { Fragment } from 'react';
-import { Outlet, useNavigate, Link } from 'react-router-dom';
+import { Outlet, Link } from 'react-router-dom';
 import { ReactComponent as RobotLogo } from '../../assets/robot.svg'; // Ensure the correct import path
 import './navigation.styles.scss';
 
 const Navigation = () => {
-  const navigate = useNavigate();
-
   return (
     <Fragment>
       <div className='navigation'>
@@ -13,12 +11,12 @@ const Navigation = () => {
           <RobotLogo className='logo' style={{ width: '50px', height: '50px' }} /> {/* Ensure the SVG has dimensions */}
         </Link>
         <div className='nav-links-container'>
-          <Link className='nav-link' onClick={() => navigate('/about')}>
+          <Link className='nav-link' to='/about'>
             About
           </Link>
-          <button className='nav-link' onClick={() => navigate('/signin')}>
+          <Link className='nav-link' to='/signin'>
             Sign In
-          </button>
+          </Link>
         </div>
       </div>
       <Outlet />

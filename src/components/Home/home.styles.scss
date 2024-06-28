@@ -1,4 +1,19 @@
 .background {
-    background-color: #000;
-    color: #fff;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Adjust the spacing between the title and the search box as needed */
+  }
+  
+  .search-box {
+    margin-top: 0; /* Remove top margin to align with header */
+  }
+  
