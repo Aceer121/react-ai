@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './signin.styles.scss';
 
 const SignIn = () => {
   const [email, setEmail] = useState('');
@@ -11,9 +12,8 @@ const SignIn = () => {
   };
 
   return (
-    <div>
-      <h1>Sign In Page</h1>
-      <button onClick={() => console.log('Sign in with Google Popup')}>Sign in with Google Popup</button>
+    <div className="sign-in-container">
+      <h1 className="sign-in">Sign In</h1>
       <form onSubmit={handleSubmit}>
         <input
           type="email"
@@ -24,6 +24,12 @@ const SignIn = () => {
         <input
           type="password"
           placeholder="Password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        <input
+          type="password"
+          placeholder="Confirm Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
