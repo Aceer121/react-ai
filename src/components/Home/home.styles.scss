@@ -1,9 +1,12 @@
 .background {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     padding-top: 20px;
+    background-color: #f0f2f5;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
   }
   
   .header {
@@ -13,7 +16,49 @@
     gap: 10px; /* Adjust the spacing between the title and the search box as needed */
   }
   
-  .search-box {
-    margin-top: 0; /* Remove top margin to align with header */
+
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em; // Adjust the size to match the "About" title size
+    font-weight: bold; 
+    color: #333;
   }
   
+  .search-box {
+    margin-top: 0; /* Remove top margin to align with header */
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .button:hover {
+    background-color: #0056b3; /* Darker button color on hover */
+  }
+
+  p {
+    font-size: 1.2rem; /* Larger text */
+    color: #666; /* Grey text color */
+  }
+
+  .footer {
+    margin-top: auto; /* Push footer to the bottom */
+    padding: 20px;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
